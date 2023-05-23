@@ -104,7 +104,9 @@ header.sticky{
 .header_menu_link_3{
     color: crimson;
 }
+/* -----------------------------------------------------------------------------footer ---------------------------------------------------------------------------  */
 #slider{
+    padding: 100px 0 0;
     padding-bottom: 30px;
     border-bottom: 2px solid #000;
     overflow: hidden;

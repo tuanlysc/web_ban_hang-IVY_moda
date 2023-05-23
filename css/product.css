@@ -133,6 +133,7 @@ header.sticky{
 }
 .product-content-left-big-img img{
     width: 100%;
+    cursor: pointer;
 }
 .product-content-left-small-img{
     width: 20%;
@@ -252,6 +253,34 @@ header.sticky{
     top:-15px;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
+}
+.product-content-right-bottom-content-title{
+    border-bottom: 2px solid #ddd;
+}
+.product-content-right-bottom-content-title-item{
+    padding:6px;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.product-content-right-bottom-content-title-item p{
+    font-family: var(--main-text-font);
+    font-size: 12px; 
+    font-weight: bold;
+    color: #ccc;
+}
+.product-content-right-bottom-content{
+    padding-top: 30px;
+}
+.product-content-right-bottom-content{
+    font-family: var(--main-text-font);
+    font-size: 12px;   
+}
+.product-content-right-bottom-content-baoquan{
+    display: none;
+}
+.activeb{
+    display: none;
 }
 /* -----------------------------------------------------------------------------footer ---------------------------------------------------------------------------  */
 .footer{

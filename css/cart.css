@@ -107,113 +107,179 @@ header.sticky{
 .header_menu_link_3{
     color: crimson;
 }
-/* -----------------------------------------------------------------------------category ---------------------------------------------------------------------------  */
+/* -----------------------------------------------------------------------------footer ---------------------------------------------------------------------------  */
 .row{
     display: flex;
     flex-wrap: wrap;
 }
-.category{
+.cart{
     padding: 100px 50px 0 50px;
 }
-.category-top{
-    margin-bottom: 50px;
+.cart-top-warp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.category-top p{
-    font-family: var(--main-text-font);
-    margin: 0 12px;
+.cart-top{
+    height:2px;
+    width: 70%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 100px;
 }
-.category-left{
-    width: 20%;
+.cart-top-item{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
 }
-.category-right{
-    width: 80%;
+.cart-top-item i{
+    color: #ddd;
 }
-.category-right-top-item:first-child{
+.cart-top-cart{
+    border: 1px solid #0DB7EA;
+}
+.cart-top-cart i{
+    color: #0DB7EA;
+}
+.cart-content-left{
     flex: 2;
-    font-size: 16px;
-    font-family: var(--main-text-font);
-    font-weight: bold;
+    padding-right: 12px;
 }
-.category-right-top-item{
-    flex: 1;
-    padding: 0 12px;
-}
-.category-right-top-item button{
+.cart-content-left table{
     width: 100%;
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    cursor: pointer;
+    text-align: center;
 }
-.category-right-top-item select{
-    width: 100%;
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    cursor: pointer;
-}
-.category-right-content{
-    margin-top: 20px;
-    justify-content: space-between;
-}
-.category-right-content-item{
-    width: calc(25% - 12px);
-    text-align:center;
-    padding: 12px 0;
-}
-.category-right-content-item h1{
-    font-size: 14px;
-    font-family: var(--main-text-font);
-    margin-top: 6px;
-    color: #57585A;
-}
-.category-right-content-item img{
-    width: 100%;
-}
-.category-right-bottom{
-    justify-content: space-between;
-    margin: 30px 0 20px;
-    width: 100%;
-}
-.category-right-bottom{
+.cart-content-left table th{
+    padding-bottom: 30px;
     font-family: var(--main-text-font);
     font-size: 12px;
-}
-.category-left ul li{
-    padding: 12px 0;
-}
-.category-left ul li>a{
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: var(--main-text-font);
-}
-.category-left ul li ul li{
-    padding-left: 10px;
-}
-.category-left-li ul{
-    display: none;
-}
-.category-left-li.block ul{
-    display: block;
-}
-.category-left ul li ul li a{
+    text-transform: uppercase;
     color: #333;
-    font-size: 12px;
+    border-collapse: collapse;
+    border-bottom: 2px solid #ddd;
 }
-/* .size span{
-    display: inline-block;
-    padding: 3px 6px;
-    border: 1px solid #ddd;
-    margin: 12px 10px 12px 0;
+.cart-content-left table p{
     font-size: 12px;
-    font-weight: bold;
+    font-family: var(--main-text-font);
+    color: #333;
+}
+.cart-content-left table input{
+    width: 30px;
+}
+.cart-content-left table span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
     cursor: pointer;
+}
+.cart-content-left table td{
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
+}
+.cart-content-left td:first-child img{
+    width: 150px;
+}
+.cart-content-left td:nth-child(2){
+    max-width: 130px;
+}
+.cart-content-left td:nth-child(3){
+    width: 30px;
+}
+.cart-content-right{
+    flex: 1;
+    padding-left: 12px;
+    border-left: 2px solid #ddd;
+}
+.cart-content-right table{
+    width: 100%;
+}
+.cart-content-right table th{
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-family: var(--main-text-font);
+    color: #333;
+    border-collapse: collapse;
+    border-bottom: 2px solid #ddd;
+}
+.cart-content-right table td{
+    padding-bottom: 30px;
+    font-size: 12px;
+    font-family: var(--main-text-font);
+    color: #333;
+    padding: 6px 0;
+}
+.cart-content-right tr:nth-child(4) td{
+    border-bottom: 2px solid #ddd;
+}
+.cart-content-right table tr td:last-child{
+    text-align: right;
+}
+.cart-content-right-text{
+    margin: 20px 0;
+    /* text-align: center; */
+}
+.cart-content-right-text p{
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 24px;
+    font-family: var(--main-text-font);
+    color: #AC2F33;
+}
+/* .cart-content-right-text p{
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Montserrat';
+    color: #AC2F33;
+    margin-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E8E9;
 } */
+.cart-content-right-button{
+    text-align: center;
+    align-items: center;
+}
+.cart-content-right-button button{
+    padding: 0 18px;
+    height: 35px;
+    cursor: pointer;
+}
+.cart-content-right-button button:first-child{
+    background-color: #fff;
+    border: 1px solid black;
+    margin-right: 20px;
+}
+.cart-content-right-button button:first-child:hover{
+    background-color: #000000;
+    color: #fff;
+}
+.cart-content-right-button button:last-child{
+    background-color: black;
+    color: #fff;
+    border: none;
+    border: 1px solid #000000;
+    margin-right: 20px;
+}
+.cart-content-right-button button:last-child:hover{
+    background-color: #fff;
+    color: black;
+}
+.cart-content-right-dangnhap{
+    margin-top: 20px;
+}
+.cart-content-right-dangnhap p{
+    font-size: 12px;
+    font-family: var(--main-text-font);
+    color: #333;
+    font-weight: bold;
+}
 /* -----------------------------------------------------------------------------footer ---------------------------------------------------------------------------  */
 .footer{
     border-top: 2px solid #000;
@@ -287,4 +353,3 @@ footer{
     margin: 20px 0;
     text-align: center;
 }
-/* -----------------------------------------------------------------------------footer ---------------------------------------------------------------------------  */

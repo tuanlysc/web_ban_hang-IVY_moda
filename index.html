@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ivy project</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="" srcset="">
+    </div>
+    <div class="menu">
+        <li><a href="" class="header_menu_link">NỮ</a>
+            <ul class="header_menu_sub">
+                <li><a href="">Hàng mới về</a></li>
+                <li><a href="">Naruto Collection</a></li>
+                <li><a href="">ÁO</a>
+                    <ul>
+                        <li><a href="">Áo sơ mi</a></li>
+                        <li><a href="">Áo thun</a></li>
+                        <li><a href="">Áo Vest</a></li>
+                        <li><a href="">Áo khoác</a></li>
+                        <li><a href="">Áo len</a></li>
+                    </ul>
+                </li>
+                <li><a href="">QUẦN</a>
+                    <ul>
+                        <li><a href="">Quần jean</a></li>
+                        <li><a href="">Quần lửng/short</a></li>
+                        <li><a href="">Quần dài</a></li>
+                    </ul>
+                </li>
+                <li><a href="">ĐẦM NỮ</a>
+                    <ul>
+                        <li><a href="">Đầm</a></li>
+                        <li><a href="">Đầm thun</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="" class="header_menu_link">NAM</a></li>
+        <li><a href="" class="header_menu_link">TRẺ EM</a></li>
+        <li><a href="" class="header_menu_link_3">FLASH SALE TỪ 20-23H</a></li>
+        <li><a href="" class="header_menu_link">BỘ SƯU TẬP</a></li>
+        <li><a href="" class="header_menu_link">LIFESTYLE</a></li>
+        <li><a href="" class="header_menu_link">VỀ CHÚNG TÔI</a></li>  
+    </div>
+    <div class="others">
+        <li><input placeholder="Tìm kiếm" type="text" name="" id=""><i class="fas fa-search"></i></li>
+        <li><a href="" class="header_icon_link"><i class="fa fa-headphones"></i></a></li>
+        <li><a href="" class="header_icon_link"><i class="fa fa-user"></i></a></li>
+        <li><a href="" class="header_icon_link"><i class="fa fa-bag-shopping"></i></a></li>
+    </div>
+</header>  
+<section id="slider">
+    <div class="aspect-ratio-169">
+        <img src="img/33715ee38e8710a8af93e63aa4bc9d51.png" alt="">
+        <img src="img/940af46edf8dec343c72cf3e2230563e.jpg" alt="">
+        <img src="img/35cbc7f406f32b21a8ceee16f41ab9bd.gif" alt="">
+    </div>
+    <div class="dot-container">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</section>
+<!------------------------------------------------------------------ app ------------------------------------------------------------------->
+<section class="footer">
+    <div class="footer-container">
+        <p>Tải ứng dụng IVY moda</p>
+        <div class="app-google">
+            <a href=""><img src="img/appstore.png" alt=""></a>
+            <a href=""><img src="img/googleplay.png" alt=""></a>
+        </div>
+        <p>Nhận bản tin IVY moda</p>
+        <input type="text" placeholder="Nhập email của bạn..." name="" id="">
+    </div>
+    <div class="footer-top">
+        <li><a href=""><img src="img/dmca_protected_16_120.png" alt=""></a></li>
+        <li><a href=""><img src="img/img-congthuong.png" alt=""></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tuyển dụng</a></li>
+        <li><a href="">Giới thiệu</a></li>
+        <li>
+            <a href=""class="fab fa-facebook"></a>
+            <a href=""class="fab fa-twitter"></a>
+            <a href=""class="fab fa-youtube"></a>
+        </li>
+    </div>
+    <div class="footer-center">
+        <p>
+            Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650 <br>
+            Địa chỉ đăng ký: Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam <br>
+            Số điện thoại: <b>0243 205 2222</b>/ <b>090 589 8683</b>  <br>
+            Email: <b>cskh@ivy.com.vn</b>
+        </p> 
+    </div>
+    <div class="footer-bottom">
+        ©IVYmoda All rights reserved
+    </div>
+</section> 
+<!-- slider -->
+<script>
+    // Headers
+    const header =document.querySelector("header")
+    window.addEventListener("scroll",function(){
+        x = window.pageYOffset
+        if(x>0){
+            header.classList.add("sticky")
+        }else{
+            header.classList.remove("sticky")
+        }
+    })
+    // slider
+    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+    const imgContainer = document.querySelector('.aspect-ratio-169')
+    const dotItem = document.querySelectorAll(".dot")
+    let imgNumber= imgPosition.length
+    let index=0
+    // console.log
+    imgPosition.forEach(function(image,index){
+        image.style.left = index*100+"%"
+        dotItem[index].addEventListener("click",function(){
+            slider(index)
+        })
+    })
+    function imgSlide(){
+        index++
+        console.log(index)
+        if(index>=imgNumber){index=0}
+        slider(index)
+    }
+    function slider(index){
+        imgContainer.style.left="-"+index*100+"%"
+        const dotActive = document.querySelector('.active')
+        dotActive.classList.remove("active")
+        dotItem[index].classList.add("active")
+    }
+    setInterval(imgSlide,3000)
+</script>
+</body>
+</html>

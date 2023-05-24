@@ -63,7 +63,7 @@
         <div class="delivery-top-warp">
             <div class="delivery-top">
                 <div class="delivery-top-delivery delivery-top-item">
-                    <i class="fas fa-shopping-delivery"></i>
+                    <i class="fas fa-shopping-cart"></i>
                 </div>
                 <div class="delivery-top-adress delivery-top-item">
                     <i class="fas fa-location-dot"></i>
@@ -75,13 +75,81 @@
         </div>
     </div>
     <div class="container">
-        <div class="delivery-content">
+        <div class="delivery-content row">
             <div class="delivery-content-left">
-                <div class="delivery-content-left-dangnhap">
-                    
+                <div class="delivery-content-left-dangnhap row">
+                    <i class="fa fa-sign-in"></i>
+                    <p>Đăng nhập(nếu bạn đã có tài khoản IVY)</p>
+                </div>
+                <div class="delivery-content-left-khachle row">
+                    <input type="radio" checked name="loaikhach" id="" value="khachle">
+                    <p>Khách lẻ <span style="font-weight: bold;">(Nếu bạn không muốn lưu lại thông tin)</span></p>
+                </div>
+                <div class="delivery-content-left-dangky row">
+                    <input type="radio"  name="loaikhach" id="" value="khachle">
+                    <p>Đăng ký<span style="font-weight: bold;">(Tạo tài khoản với thông tin bên dưới)</span></p>
+                </div>
+                <div class="delivery-content-left-input-top row">
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Họ tên <span style="color: red;">*</span></label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Điện thoại <span style="color: red;">*</span></label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Tỉnh/TP <span style="color: red;">*</span></label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="delivery-content-left-input-top-item">
+                        <label for="">Quận/huyện <span style="color: red;">*</span></label>
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+                <div class="delivery-content-left-input-bottom">
+                    <label for="">Địa chỉ <span style="color: red;">*</span></label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="delivery-content-left-input-button">
+                    <a href=""><span>&#171;</span> Quay lại giỏ hàng</a>
+                    <button style="font-weight: bold;">THANH TOÁN VÀ GIAO HÀNG</button>
                 </div>
             </div>
-            <div class="delivery-content-right"></div>
+            <div class="delivery-content-right">
+                <table>
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Giảm giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                    <tr>
+                        <td>SƠ MI HỌA TIẾT REN</td>
+                        <td>-30%</td>
+                        <td>1</td>
+                        <td><p>1.090.000 <sup>đ</sup></p></td>
+                    </tr>
+                    <tr>
+                        <td>SƠ MI HỌA TIẾT REN</td>
+                        <td>-30%</td>
+                        <td>1</td>
+                        <td><p>1.090.000 <sup>đ</sup></p></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;" colspan="3">Tổng</td>
+                        <td style="font-weight: bold;" colspan="3"><p>1.090.000 <sup>đ</sup></p></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;" colspan="3">Thuế VAT</td>
+                        <td style="font-weight: bold;" colspan="3"><p>190.000 <sup>đ</sup></p></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;" colspan="3">Tổng tiền hàng</td>
+                        <td style="font-weight: bold;" colspan="3"><p>1.090.000 <sup>đ</sup></p></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 </section>
